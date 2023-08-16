@@ -1,0 +1,95 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a base font size for better responsiveness */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Email and password box styling */
+.email_password_box {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Input styling */
+.email_input,
+.password_input {
+    position: relative;
+}
+
+.gu{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.mut{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.mut:focus{
+    border-color: #e44d26;
+}
+
+.gu:focus {
+    border-color: #e44d26;
+}
+
+/* Icon styling */
+.uil{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* Animation for eye icons 
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.uil-eye,
+.uil-eye-slash {
+    animation: blink 2s infinite;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .email_password_box {
+        padding: 1rem;
+    }
+}
